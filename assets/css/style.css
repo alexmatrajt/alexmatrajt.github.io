@@ -347,10 +347,10 @@ main {
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
-  font-size: var(--fs-7);
+  font-size: var(--fs-5);
   font-weight: var(--fw-300);
   width: max-content;
-  padding: 5px 15px;
+  padding: 8px 20px;
   border-radius: 8px;
 }
 
@@ -1344,8 +1344,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .info-content .name { margin-bottom: 15px; }
 
   .info-content .title { 
-    padding: 7px 20px; 
-    font-size: var(--fs-6);
+    padding: 10px 25px;
+    font-size: var(--fs-4);
   }
 
   .info_more-btn {
