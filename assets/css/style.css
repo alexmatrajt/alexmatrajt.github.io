@@ -557,6 +557,55 @@ main {
 
 
 /**
+ * #skills-expertise
+ */
+
+.skills-expertise { margin-bottom: 35px; }
+
+.skills-expertise-title { margin-bottom: 20px; }
+
+.skills-category { margin-bottom: 25px; }
+
+.skills-category-title {
+  color: var(--light-gray);
+  margin-bottom: 15px;
+}
+
+.skills-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-item {
+  background: var(--eerie-black-1);
+  border: 1px solid var(--white-2);
+  border-radius: 8px;
+  padding: 8px 15px;
+  transition: var(--transition-1);
+}
+
+.skill-item span {
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-2);
+}
+
+@media (min-width: 580px) {
+  .skills-items { gap: 20px; }
+  
+  .skill-item { padding: 10px 20px; }
+  
+  .skill-item span { font-size: var(--fs-6); }
+}
+
+
+/**
  * #testimonials 
  */
 
