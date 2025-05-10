@@ -66,17 +66,17 @@ Programming: Python, R, SQL, C++,
 
 Data Analysis: Pandas, Numpy, Regex, dplyr, Tidyverse, stringr
 
-Machine Learning and AI: Pytorch, Scikit-learn, DSPy, OpenAI Products
+Machine Learning and AI: Pytorch, Scikit-learn, DSPy, OpenAI Products, Regression, Supervized Learning, Deep Learning, Unsupervized Learning, Transfer Learning, Clustering, Vector Embeddings
 
-Database Management: SQLite, PostgreSQL, JDBC, 
+Database Management: SQLite, PostgreSQL, JDBC 
 
 Visualization: Matplotlib, Seaborn, Networkx, Mlpsoccer, ggplot2, 
 
-UX Research: competitive analysis, observation, surveys, interviews, heuristic evaluation, usability testing, task analysis, personas and scenarios
+UX Research: Competitive Analysis, Surveys, Interviews, Heuristic Evaluation, Usability Testing, Task Analysis, Personas and Scenarios
 
-Business? SWOT, consulting stuff
+Business & Marketing Strategy: SWOT Analysis, Branding, Logo Design, Social Media Strategy
 
-Other tools: GitHub, Excel, 
+Tools & Environments: GitHub, Excel, Google Sheets, Google Slides, Jupyter, RStudio, Cursor
 
 ## clients
 
