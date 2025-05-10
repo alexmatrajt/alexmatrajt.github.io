@@ -597,7 +597,7 @@ main {
 }
 
 .skills-subcategory {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .skills-subcategory:last-child {
@@ -606,15 +606,17 @@ main {
 
 .skills-subcategory-title {
   color: var(--light-gray-70);
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
+  display: block;
 }
 
 .skills-items {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .skill-item {
