@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Alex Matrajt Frid
+Alex Matrajt Frid
+Data Scientist
 
 Show Contacts
 
 Email
-richard@example.com
+amatrajtfrid@ucsd.edu
 
 Phone
-+1 (213) 352-2795
++1 (313) 518-7408
 
 Birthday
-June 23, 1982
+July 20, 2002
 
 Location
-Sacramento, California, USA
+San Diego, California, USA
 
 # navbar
 
@@ -39,7 +39,7 @@ My job is to build your website so that it is functional and user-friendly but a
 
 ## service
 
-What i'm doing
+Fields I've Worked In
 
 alt = design icon
 Web design
@@ -58,26 +58,25 @@ Photography
 I make high-quality photos of any category at a professional level.
 
 
-## testimonials
+## Skills & Expertise
 
-Testimonials
+Technical Skills
 
-alt = Daniel lewis
-Daniel lewis
-Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+Programming: Python, R, SQL, C++, 
 
-alt = Jessica miller
-Jessica miller
-Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+Data Analysis: Pandas, Numpy, Regex, dplyr, Tidyverse, stringr
 
-alt = Emily evans
-Emily evans
-Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+Machine Learning and AI: Pytorch, Scikit-learn, DSPy, OpenAI Products
 
-alt = Henry william
-Henry william
-Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+Database Management: SQLite, PostgreSQL, JDBC, 
 
+Visualization: Matplotlib, Seaborn, Networkx, Mlpsoccer, ggplot2, 
+
+UX Research: competitive analysis, observation, surveys, interviews, heuristic evaluation, usability testing, task analysis, personas and scenarios
+
+Business? SWOT, consulting stuff
+
+Other tools: GitHub, Excel, 
 
 ## clients
 
