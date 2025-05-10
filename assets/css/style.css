@@ -579,19 +579,25 @@ main {
   z-index: -1;
 }
 
-.skills-expertise-title { margin-bottom: 20px; }
+.skills-expertise-title { 
+  margin-bottom: 25px;
+}
 
-.skills-category { margin-bottom: 25px; }
+.skills-category { 
+  margin-bottom: 30px;
+}
 
-.skills-category:last-child { margin-bottom: 0; }
+.skills-category:last-child { 
+  margin-bottom: 0;
+}
 
 .skills-category-title {
   color: var(--light-gray);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .skills-subcategory {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .skills-subcategory:last-child {
@@ -600,7 +606,7 @@ main {
 
 .skills-subcategory-title {
   color: var(--light-gray-70);
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
 }
