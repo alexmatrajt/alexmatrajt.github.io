@@ -590,6 +590,21 @@ main {
   margin-bottom: 15px;
 }
 
+.skills-subcategory {
+  margin-bottom: 20px;
+}
+
+.skills-subcategory:last-child {
+  margin-bottom: 0;
+}
+
+.skills-subcategory-title {
+  color: var(--light-gray-70);
+  margin-bottom: 12px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+}
+
 .skills-items {
   display: flex;
   flex-wrap: wrap;
