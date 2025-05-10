@@ -606,7 +606,7 @@ main {
 
 .skills-subcategory-title {
   color: var(--light-gray-70);
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
 }
