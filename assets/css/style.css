@@ -2000,6 +2000,24 @@ textarea.form-input::-webkit-resizer { display: none; }
  * #education
  */
 
+.education-title {
+  color: var(--white-2);
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.education-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
+
 .education {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -2017,24 +2035,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
-}
-
-.education-title {
-  color: var(--white-2);
-  margin-bottom: 25px;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.education-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 30px;
-  height: 3px;
-  background: var(--text-gradient-yellow);
-  border-radius: 3px;
 }
 
 .education-item {
