@@ -333,7 +333,15 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 .info-content .name {
@@ -602,6 +610,9 @@ main {
 
 .skills-expertise-title { 
   margin-bottom: 25px;
+  color: var(--white-2);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-500);
 }
 
 .skills-category { 
@@ -613,8 +624,10 @@ main {
 }
 
 .skills-category-title {
-  color: var(--light-gray);
+  color: var(--white-2);
   margin-bottom: 20px;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
 }
 
 .skills-subcategory {
@@ -626,9 +639,9 @@ main {
 }
 
 .skills-subcategory-title {
-  color: var(--light-gray-70);
+  color: var(--white-2);
   margin-bottom: 15px;
-  font-size: var(--fs-6);
+  font-size: var(--fs-5);
   font-weight: var(--fw-400);
   display: block;
 }
@@ -649,14 +662,16 @@ main {
 }
 
 .skill-item span {
-  color: var(--white-2);
-  font-size: var(--fs-7);
+  color: var(--light-gray);
+  font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  line-height: 1.6;
 }
 
 .skill-item:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-2);
+  border-color: var(--text-gradient-yellow);
 }
 
 @media (min-width: 580px) {
@@ -2000,24 +2015,6 @@ textarea.form-input::-webkit-resizer { display: none; }
  * #education
  */
 
-.education-title {
-  color: var(--white-2);
-  margin-bottom: 25px;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.education-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 30px;
-  height: 3px;
-  background: var(--text-gradient-yellow);
-  border-radius: 3px;
-}
-
 .education {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -2035,6 +2032,24 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+}
+
+.education-title {
+  color: var(--white-2);
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.education-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
 }
 
 .education-item {
