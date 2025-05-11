@@ -626,6 +626,19 @@ main {
   color: var(--white-2);
   font-size: var(--fs-2);
   font-weight: var(--fw-500);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.skills-expertise-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
 }
 
 .skills-category { 
