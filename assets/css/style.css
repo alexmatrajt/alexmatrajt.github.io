@@ -340,8 +340,8 @@ main {
 }
 
 .avatar-box img {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 30px;
 }
@@ -454,12 +454,20 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
+}
+
+.contact-info address { 
+  font-style: normal;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+.contact-info .contact-link {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 100%;
 }
-
-.contact-info address { font-style: normal; }
 
 .social-list {
   display: flex;
@@ -671,12 +679,17 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  transition: var(--transition-1);
 }
 
 .skill-item:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-2);
-  border-color: var(--text-gradient-yellow);
+  border-color: var(--orange-yellow-crayola);
+}
+
+.skill-item:hover span {
+  color: var(--orange-yellow-crayola);
 }
 
 @media (min-width: 580px) {
@@ -1471,7 +1484,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { 
+    width: 140px; 
+    height: 140px;
+  }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1970,7 +1986,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { 
+    width: 180px; 
+    height: 180px;
+  }
 
   .info-content .name {
     white-space: nowrap;
@@ -2047,7 +2066,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .education-title::after {
-  display: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
 }
 
 .education-item {
