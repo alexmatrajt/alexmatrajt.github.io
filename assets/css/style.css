@@ -355,14 +355,25 @@ main {
 }
 
 .info-content .title {
-  color: var(--white-1);
-  background: var(--onyx);
+  color: var(--white-2);
+  background: var(--border-gradient-onyx);
   font-size: var(--fs-5);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-500);
   width: max-content;
   padding: 8px 20px;
   border-radius: 8px;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.info-content .title::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
 }
 
 .info-content .social-list {
@@ -554,7 +565,22 @@ main {
 
 .service { margin-bottom: 35px; }
 
-.service-title { margin-bottom: 20px; }
+.service-title { 
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.service-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
 
 .service-list {
   display: grid;
@@ -1506,7 +1532,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .info-content .title { 
     padding: 10px 25px;
-    font-size: var(--fs-4);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-500);
   }
 
   .info_more-btn {
