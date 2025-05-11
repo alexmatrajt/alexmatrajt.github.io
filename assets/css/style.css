@@ -2154,4 +2154,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-size: var(--fs-6);
   font-style: italic;
   font-weight: var(--fw-300);
+  margin-bottom: 5px;
+}
+
+.education-minor {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-style: italic;
+  font-weight: var(--fw-300);
+  margin-left: 15px;
 }
