@@ -359,18 +359,18 @@ main {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: -15px;
 }
 
 .info-content .social-link {
-  color: #FFFFFF;
-  font-size: 60px;
+  color: #059669;
+  font-size: 40px;
   transition: var(--transition-1);
 }
 
 .info-content .social-link:hover {
-  color: var(--orange-yellow-crayola);
+  color: #10B981;  /* Lighter jade for hover effect */
 }
 
 .info_more-btn {
