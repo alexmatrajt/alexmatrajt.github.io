@@ -364,13 +364,13 @@ main {
 }
 
 .info-content .social-link {
-  color: #059669;
+  color: #FFFFFF;
   font-size: 40px;
   transition: var(--transition-1);
 }
 
 .info-content .social-link:hover {
-  color: #10B981;  /* Lighter jade for hover effect */
+  color: var(--orange-yellow-crayola);
 }
 
 .info_more-btn {
@@ -562,7 +562,7 @@ main {
 .service-icon-box { margin-bottom: 10px; }
 
 .service-icon-box img {
-  filter: invert(83%) sepia(30%) saturate(638%) hue-rotate(358deg) brightness(103%) contrast(107%);
+  filter: invert(31%) sepia(98%) saturate(1234%) hue-rotate(142deg) brightness(95%) contrast(101%);
 }
 
 .service-content-box { text-align: center; }
