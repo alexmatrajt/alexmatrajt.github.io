@@ -206,7 +206,9 @@ article {
   z-index: -1;
 }
 
-.icon-box ion-icon { --ionicon-stroke-width: 35px; }
+.icon-box ion-icon { 
+  --ionicon-stroke-width: 50px; 
+}
 
 article { display: none; }
 
@@ -452,6 +454,9 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .contact-info address { font-style: normal; }
