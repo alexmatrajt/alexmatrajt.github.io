@@ -352,6 +352,24 @@ main {
   width: max-content;
   padding: 8px 20px;
   border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.info-content .social-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.info-content .social-link {
+  color: var(--light-gray-70);
+  font-size: 20px;
+  transition: var(--transition-1);
+}
+
+.info-content .social-link:hover {
+  color: var(--orange-yellow-crayola);
 }
 
 .info_more-btn {
