@@ -301,6 +301,13 @@ main {
   min-width: 259px;
 }
 
+@media (min-width: 580px) {
+  main {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+}
+
 
 
 
@@ -1447,7 +1454,7 @@ main {
    */
 
   main {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 100px;
   }
 
