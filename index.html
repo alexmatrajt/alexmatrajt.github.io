@@ -133,7 +133,11 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume & Portfolio</button>
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
         </ul>
@@ -454,7 +458,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume & portfolio">
+      <article class="resume" data-page="resume">
 
         <header>
           <h2 class="h2 article-title">Resume & Portfolio</h2>
@@ -467,7 +471,7 @@
               <ion-icon name="briefcase-outline"></ion-icon>
             </div>
             <h3 class="h3">Professional Experience</h3>
-          </div>
+            </div>
 
           <div class="experience-item">
             <div class="experience-header">
@@ -565,7 +569,7 @@
               <span class="experience-date">Jan 2025 — April 2025</span>
             </div>
             <figure class="project-image">
-              <img src="./assets/images/caloriq.png" alt="CaloriQ Project" loading="lazy">
+              <img src="./assets/images/caloriQ.png" alt="CaloriQ Project Screenshot" loading="lazy">
             </figure>
             <p class="experience-description">
               CaloriQ is a fitness and nutrition website I built with six peers, powered by DeepSeek R1 to generate personalized weekly meal and workout plans based on user goals. Designed to make healthy living more accessible through AI, it also features a chatbot for guidance and support during setbacks.
@@ -623,31 +627,31 @@
             <p class="experience-description">
               Built a logistic regression classifier to predict ICU patient survival using 40 clinical features from the MIMIC-IV dataset. Applied techniques like one-hot encoding, normalization, regularization, and cross-validation to optimize performance. Designed to help identify high-risk patients early and support life-saving interventions.
             </p>
-          </div>
+              </div>
 
           <div class="experience-item">
             <div class="experience-header">
               <h4 class="h4 experience-company">Dog Breed Classifier with Transfer Learning</h4>
               <span class="experience-location">Ann Arbor, MI</span>
-            </div>
+              </div>
             <div class="experience-subheader">
               <h5 class="h5 experience-title">Machine Learning (EECS 445 Project)</h5>
               <span class="experience-date">November 2024</span>
-            </div>
+              </div>
             <p class="experience-description">
               Built and trained a Convolutional Neural Network to classify dog images as Golden Retrievers or Collies. Faced a shortcut learning issue: Collie images often had green grassy backgrounds, which the model relied on instead of dog features. To address this, used transfer learning by pretraining the model on eight diverse dog breeds to help it learn general canine features. Then fine-tuned different numbers of layers on the target dataset to find the best out-of-sample accuracy—transfer learning significantly improved performance and reduced background bias.
             </p>
-          </div>
+              </div>
 
           <div class="experience-item">
             <div class="experience-header">
               <h4 class="h4 experience-company">Online Friend-Making App Case Study</h4>
               <span class="experience-location">Ann Arbor, MI</span>
-            </div>
+              </div>
             <div class="experience-subheader">
               <h5 class="h5 experience-title">UX Research (SI 422 Personal Project)</h5>
               <span class="experience-date">March - April 2024</span>
-            </div>
+              </div>
             <p class="experience-description">
               Led the discovery and needs assessment phase for a friend-making app for college students. Conducted five user interviews with photo elicitation to explore how personality types influence social preferences, challenges, and app usage. Analyzed transcripts using affinity diagramming to identify key themes, then developed user personas and a journey map comparing introverted and extroverted users. Findings informed feature recommendations such as personalized icebreakers, follow-up prompts, and trust-building mechanisms to address users' unique pain points and preferences.
             </p>
@@ -662,12 +666,12 @@
 
         <!-- Community Engagement & Leadership -->
         <section class="experience-section">
-          <div class="title-wrapper">
+              <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="people-outline"></ion-icon>
-            </div>
+              </div>
             <h3 class="h3">Community Engagement & Leadership</h3>
-          </div>
+              </div>
 
           <div class="experience-item">
             <div class="experience-header">
@@ -682,8 +686,248 @@
               <li>Coordinated semester activities, managed leadership team, and led weekly meetings on mindfulness meditation</li>
               <li>Launched rebranding and marketing campaign increasing membership by 50% and doubling social media traffic</li>
               <li>Organized 10+ social and wellness events, fostering a strong sense of community on campus</li>
-            </ul>
+          </ul>
           </div>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
         </section>
 
       </article>
