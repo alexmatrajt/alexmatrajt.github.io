@@ -651,9 +651,10 @@ main {
   margin-bottom: 25px;
   color: var(--white-2);
   font-size: var(--fs-2);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
   position: relative;
   padding-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 .skills-expertise-title::after {
@@ -661,7 +662,7 @@ main {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
+  width: 50px;
   height: 3px;
   background: var(--text-gradient-yellow);
   border-radius: 3px;
@@ -970,29 +971,16 @@ main {
 .experience-section .title-wrapper {
   display: flex;
   align-items: center;
-  gap: 15px;
   margin-bottom: 25px;
-}
-
-.experience-section .icon-box {
-  background: var(--border-gradient-onyx);
-  width: 45px;
-  height: 45px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  color: var(--orange-yellow-crayola);
-  box-shadow: var(--shadow-1);
 }
 
 .experience-section .h3 {
   color: var(--white-2);
   font-size: var(--fs-2);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
   position: relative;
   padding-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 .experience-section .h3::after {
@@ -1000,10 +988,14 @@ main {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
+  width: 50px;
   height: 3px;
   background: var(--text-gradient-yellow);
   border-radius: 3px;
+}
+
+.experience-section .icon-box {
+  display: none;
 }
 
 .experience-item {
@@ -2066,9 +2058,12 @@ main {
 
 .education-title {
   color: var(--white-2);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
   margin-bottom: 25px;
   position: relative;
   padding-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 .education-title::after {
@@ -2076,7 +2071,7 @@ main {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
+  width: 50px;
   height: 3px;
   background: var(--text-gradient-yellow);
   border-radius: 3px;
@@ -2121,4 +2116,51 @@ main {
   font-style: italic;
   font-weight: var(--fw-300);
   margin-bottom: 5px;
+}
+
+/* Professional Experience, Research Experience, Club Experience, Academic Projects, Community Engagement & Leadership */
+.experience-section .title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.experience-section .h3 {
+  color: var(--white-2);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
+  position: relative;
+  padding-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.experience-section .h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
+
+/* Remove icon box styles only for experience sections */
+.experience-section .icon-box {
+  display: none;
+}
+
+/* Keep original styles for other sections */
+.skills-expertise .icon-box,
+.education .icon-box {
+  background: var(--border-gradient-onyx);
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
 }
