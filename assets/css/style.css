@@ -1082,6 +1082,39 @@ main {
   margin-bottom: 0;
 }
 
+.experience-description {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.experience-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  transition: var(--transition-1);
+}
+
+.link-item:hover {
+  color: var(--light-gray);
+}
+
+.link-item ion-icon {
+  font-size: 18px;
+}
+
 
 
 
