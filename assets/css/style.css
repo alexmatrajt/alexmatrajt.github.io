@@ -1182,21 +1182,15 @@ main {
 }
 
 @media (max-width: 900px) {
-  .research-images-horizontal,
-  .project-images-centered {
+  .experience-content {
     flex-direction: column;
-    align-items: center;
     gap: 30px;
   }
-  
-  .research-images-horizontal .project-image,
-  .project-images-centered .project-image {
+
+  .project-image {
     width: 100%;
     max-width: 450px;
-  }
-
-  .medium-image {
-    max-width: 100%;
+    margin: 0 auto;
   }
 }
 
