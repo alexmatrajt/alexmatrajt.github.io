@@ -1148,14 +1148,54 @@ main {
   transform: scale(1.02);
 }
 
+/* New styles for different image layouts */
+.research-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 170px;
+}
+
+.research-images .project-image {
+  width: 100%;
+}
+
+.wide-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.square-image {
+  width: 120px;
+  margin-left: 20px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .experience-content {
     flex-direction: column;
   }
   
   .project-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 15px auto;
+  }
+  
+  .research-images {
+    width: 100%;
+    max-width: 300px;
+    margin: 15px auto;
+  }
+  
+  .wide-image {
+    max-width: 100%;
+  }
+  
+  .square-image {
     width: 100px;
-    margin: 0 auto;
+    margin: 15px auto;
   }
 }
 
