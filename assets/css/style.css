@@ -247,14 +247,7 @@ article.active {
 }
 
 .article-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background: var(--text-gradient-yellow);
-  border-radius: 3px;
+  display: none;
 }
 
 .has-scrollbar::-webkit-scrollbar {
@@ -1120,7 +1113,7 @@ main {
 }
 
 .project-image {
-  width: 170px;
+  width: 180px;
   flex-shrink: 0;
   margin: 0;
   border-radius: 8px;
@@ -1155,7 +1148,7 @@ main {
 
 .medium-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   margin: 20px auto;
 }
 
@@ -1184,7 +1177,7 @@ main {
   }
 
   .medium-image {
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 
@@ -1442,8 +1435,7 @@ main {
   }
 
   .article-title::after {
-    width: 40px;
-    height: 5px;
+    display: none;
   }
 
   .icon-box {
