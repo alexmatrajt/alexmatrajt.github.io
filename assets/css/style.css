@@ -546,7 +546,7 @@ main {
   #ABOUT
 \*-----------------------------------*/
 
-.about .article-title { margin-bottom: 15px; }
+.about .article-title { margin-bottom: 10px; }
 
 .about-text {
   color: var(--light-gray);
@@ -1528,7 +1528,7 @@ main {
    * #ABOUT
    */
 
-  .about .article-title { margin-bottom: 20px; }
+  .about .article-title { margin-bottom: 15px; }
 
   .about-text { margin-bottom: 40px; }
 
