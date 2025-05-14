@@ -50,7 +50,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     clickedLink.classList.add("active");
 
     // Find and activate the corresponding page
-    const clickedLinkText = clickedLink.innerHTML.toLowerCase();
+    const clickedLinkText = clickedLink.textContent.trim().toLowerCase();
     // Handle cases where data-page might be explicitly set on the nav link
     const clickedLinkDataPage = clickedLink.dataset.page ? clickedLink.dataset.page.toLowerCase() : null; 
 
