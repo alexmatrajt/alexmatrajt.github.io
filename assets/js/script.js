@@ -83,8 +83,11 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase().includes(pages[i].dataset.page) || 
-          (this.dataset.page === pages[i].dataset.page)) {
+      if (this.innerHTML.toLowerCase() === "resume & portfolio" && pages[i].dataset.page === "resume") {
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else if (this.innerHTML.toLowerCase().includes(pages[i].dataset.page)) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
