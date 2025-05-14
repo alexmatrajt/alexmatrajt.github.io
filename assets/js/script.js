@@ -80,22 +80,26 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === "resume & portfolio" && pages[i].dataset.page === "resume") {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+navigationLinks.forEach((link, linkIndex) => {
+  link.addEventListener("click", function () {
+    // First remove active class from all pages and links
+    pages.forEach(page => page.classList.remove("active"));
+    navigationLinks.forEach(navLink => navLink.classList.remove("active"));
+
+    // Add active class to the clicked link
+    link.classList.add("active");
+
+    // Find and activate the corresponding page
+    pages.forEach(page => {
+      const linkText = link.textContent.trim().toLowerCase();
+      const pageType = page.dataset.page;
+      
+      if ((linkText === "resume & portfolio" && pageType === "resume") ||
+          (linkText.includes(pageType))) {
+        page.classList.add("active");
         window.scrollTo(0, 0);
-      } else if (this.innerHTML.toLowerCase().includes(pages[i].dataset.page)) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
       }
-    }
+    });
   });
-}
+});
 
