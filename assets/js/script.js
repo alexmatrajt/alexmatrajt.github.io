@@ -82,15 +82,52 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase().includes(pages[i].dataset.page) || 
-          (this.dataset.page === pages[i].dataset.page)) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+    const clickedLink = this; // `this` is the clicked navLink
+
+    // Deactivate all other navigation links and all pages
+    for (let k = 0; k < navigationLinks.length; k++) {
+      if (navigationLinks[k] !== clickedLink) {
+        navigationLinks[k].classList.remove("active");
+      }
+    }
+    for (let k = 0; k < pages.length; k++) {
+      pages[k].classList.remove("active");
+    }
+
+    // Activate the clicked navigation link
+    clickedLink.classList.add("active");
+
+    // Find and activate the corresponding page
+    const clickedLinkText = clickedLink.innerHTML.toLowerCase();
+    // Handle cases where data-page might be explicitly set on the nav link
+    const clickedLinkDataPage = clickedLink.dataset.page ? clickedLink.dataset.page.toLowerCase() : null; 
+
+    for (let j = 0; j < pages.length; j++) {
+      const pageName = pages[j].dataset.page.toLowerCase();
+      let match = false;
+
+      if (clickedLinkDataPage && clickedLinkDataPage === pageName) {
+        // Match if nav link's data-page attribute equals the page's data-page
+        match = true;
+      } else if (!clickedLinkDataPage && clickedLinkText.includes(pageName)) {
+        // Match if nav link text includes the page's data-page name (and nav link has no data-page attribute)
+        // This handles "Resume & Portfolio" (text) matching "resume" (data-page)
+        // To be more specific for "Resume & Portfolio":
+        if (clickedLinkText === "resume & portfolio") {
+          if (pageName === "resume") {
+            match = true;
+          } else {
+            match = false; // "Resume & Portfolio" should only match "resume"
+          }
+        } else {
+          match = true; // For other links like "About", general includes is fine
+        }
+      }
+
+      if (match) {
+        pages[j].classList.add("active");
         window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        break; // Found and activated the target page, no need to check further
       }
     }
   });
