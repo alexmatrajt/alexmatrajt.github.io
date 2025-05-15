@@ -250,9 +250,27 @@ article.active {
   display: none;
 }
 
+.article-title-icon-link {
+  display: inline-block;
+  margin-left: 10px;
+  color: var(--orange-yellow-crayola);
+  font-size: 0.8em;
+  vertical-align: middle;
+  transition: color var(--transition-1);
+}
+
+.article-title-icon-link:hover,
+.article-title-icon-link:focus {
+  color: var(--light-gray);
+}
+
+.article-title-icon-link ion-icon {
+  display: block;
+}
+
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  width: 5px;
+  height: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -1116,7 +1134,7 @@ main {
 
 .experience-list {
   flex: 1;
-  min-width: 0; /* Prevents flex item from overflowing */
+  min-width: 0;
 }
 
 .project-image {
