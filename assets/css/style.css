@@ -687,18 +687,96 @@ main {
 }
 
 .skills-category { 
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .skills-category:last-child { 
   margin-bottom: 0;
 }
 
+.skills-category-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.skills-icon-box {
+  width: 45px;
+  height: 45px;
+  background: var(--bg-gradient-onyx);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-1);
+  border: 1px solid var(--jet);
+}
+
+.skills-icon-box ion-icon {
+  font-size: 20px;
+  color: var(--orange-yellow-crayola);
+}
+
 .skills-category-title {
   color: var(--white-2);
-  margin-bottom: 20px;
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
+  margin: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skills-card {
+  background: var(--bg-gradient-onyx);
+  border: 1px solid var(--jet);
+  border-radius: 12px;
+  padding: 20px;
+  transition: var(--transition-1);
+  box-shadow: var(--shadow-1);
+}
+
+.skills-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+  border-color: var(--orange-yellow-crayola);
+}
+
+.skills-subcategory-title {
+  color: var(--white-2);
+  margin-bottom: 15px;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
+  display: block;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: var(--eerie-black-1);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 6px 12px;
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-400);
+  transition: var(--transition-1);
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--eerie-black-1);
+  border-color: var(--orange-yellow-crayola);
+  transform: translateY(-1px);
 }
 
 .skills-subcategory {
@@ -756,6 +834,20 @@ main {
   .skill-item { padding: 10px 20px; }
   
   .skill-item span { font-size: var(--fs-6); }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+  }
+  
+  .skills-card {
+    padding: 25px;
+  }
+  
+  .skill-tag {
+    padding: 8px 15px;
+    font-size: var(--fs-6);
+  }
 }
 
 
