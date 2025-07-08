@@ -762,10 +762,10 @@ main {
 
 .skill-tag {
   background: var(--eerie-black-1);
-  border: 1px solid var(--orange-yellow-crayola);
+  border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 6px 12px;
-  color: var(--orange-yellow-crayola);
+  color: var(--light-gray);
   font-size: var(--fs-7);
   font-weight: var(--fw-400);
   transition: var(--transition-1);
