@@ -1,14 +1,6 @@
-# Personal Portfolio Website
+# 💼 My Personal Portfolio Website
 
-A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. This portfolio showcases my professional experience, research work, academic projects, and skills in data science and business analytics.
-
-## Tech Stack
-
-- HTML5
-- CSS3 (Custom Properties, Flexbox, Grid)
-- JavaScript (ES6+)
-- Google Fonts
-- Ionicons
+Welcome to my personal portfolio website built with HTML, CSS, and JavaScript! This portfolio showcases my professional experience, research work, academic projects, and skills in data science and business analytics.
 
 ## Sections
 
