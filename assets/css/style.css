@@ -1237,6 +1237,7 @@ main {
   overflow: hidden;
   box-shadow: var(--shadow-2);
   align-self: flex-start;
+  cursor: pointer; /* Add cursor pointer to indicate clickable */
 }
 
 .project-image img {
@@ -1248,6 +1249,100 @@ main {
 
 .project-image:hover img {
   transform: scale(1.02);
+}
+
+/* Image Modal Styles */
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+}
+
+.image-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  background: var(--eerie-black-2);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow-4);
+  transform: scale(0.8);
+  transition: var(--transition-1);
+}
+
+.image-modal-overlay.active .image-modal-content {
+  transform: scale(1);
+}
+
+.image-modal-img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: var(--jet);
+  color: var(--light-gray);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition-1);
+  z-index: 1;
+}
+
+.image-modal-close:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
+
+.image-modal-close ion-icon {
+  font-size: 18px;
+}
+
+/* Responsive adjustments for modal */
+@media (max-width: 768px) {
+  .image-modal-content {
+    max-width: 95%;
+    padding: 15px;
+  }
+  
+  .image-modal-img {
+    max-height: 60vh;
+  }
+  
+  .image-modal-close {
+    top: 5px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .image-modal-close ion-icon {
+    font-size: 16px;
+  }
 }
 
 /* New styles for different image layouts */

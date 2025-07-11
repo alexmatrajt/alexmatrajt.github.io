@@ -84,3 +84,51 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+// Image Modal Functionality
+const imageModal = document.getElementById('imageModal');
+const imageModalImg = document.getElementById('imageModalImg');
+const imageModalClose = document.getElementById('imageModalClose');
+
+// Get all project images
+const projectImages = document.querySelectorAll('.project-image img');
+
+// Add click event to all project images
+projectImages.forEach(img => {
+  img.addEventListener('click', function() {
+    const imgSrc = this.src;
+    const imgAlt = this.alt;
+    
+    // Set the modal image source and alt text
+    imageModalImg.src = imgSrc;
+    imageModalImg.alt = imgAlt;
+    
+    // Show the modal
+    imageModal.classList.add('active');
+    
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+// Close modal when close button is clicked
+imageModalClose.addEventListener('click', function() {
+  imageModal.classList.remove('active');
+  document.body.style.overflow = '';
+});
+
+// Close modal when clicking on the overlay (but not on the image content)
+imageModal.addEventListener('click', function(e) {
+  if (e.target === imageModal) {
+    imageModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && imageModal.classList.contains('active')) {
+    imageModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
